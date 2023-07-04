@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BarChartSceneController">
+    <children>
+        <BarChart fx:id="barChart" layoutX="20.0" layoutY="68.0" prefHeight="311.0" prefWidth="560.0">
+            <xAxis>
+                <CategoryAxis fx:id="xAxis" side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis fx:id="yAxis" side="LEFT" />
+            </yAxis>
+        </BarChart>
+        <RadioButton fx:id="radioButton2022" layoutX="20.0" layoutY="28.0" text="2022" />
+        <RadioButton fx:id="radioButton2023" layoutX="120.0" layoutY="28.0" text="2023" />
+        <Button layoutX="494.0" layoutY="28.0" mnemonicParsing="false" onAction="#showTableScene" text="Show Table" />
+    </children>
+</AnchorPane>
